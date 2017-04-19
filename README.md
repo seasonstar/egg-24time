@@ -1,8 +1,25 @@
 # node-24time
+微信小程序社区功能全栈解决方案，配合以下项目使用:
+
+> [egg-24time](https://github.com/seasonstar/egg-24time)
+
+社区后端使用Egg，Mysql，Redis，基于Nodejs开发，全套代码使用ES6编写
+
+> [weapp-24time](https://github.com/seasonstar/weapp-24time)
+
+微信小程序端
+
+> [egg-weapp-sdk](https://github.com/seasonstar/egg-weapp-sdk)
+
+egg的微信小程序的用户会话管理插件，需配合腾讯云出品的[qcloud-weapp-client-sdk](https://github.com/tencentyun/weapp-client-sdk)使用，Redis保存会话信息
+
 
 ## QuickStart
 
 ### Development
+
+Install Redis
+
 ```shell
 $ npm install
 $ npm run dev
