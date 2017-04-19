@@ -1,0 +1,44 @@
+{
+  "name": "node-24time",
+  "version": "1.0.0",
+  "description": "24time server",
+  "private": true,
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "crypto": "0.0.3",
+    "egg": "^1.1.0",
+    "egg-redis": "^1.0.1",
+    "egg-sequelize": "^2.0.1",
+    "egg-session-redis": "^1.0.0",
+    "egg-validate": "^1.0.0",
+    "egg-view-nunjucks": "^2.0.0",
+    "egg-weapp-sdk": "^1.1.1",
+    "moment": "^2.17.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "cheerio": "^0.22.0",
+    "egg-bin": "^2.4.0",
+    "egg-ci": "^1.5.0",
+    "egg-mock": "^3.2.0",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  }
+}
