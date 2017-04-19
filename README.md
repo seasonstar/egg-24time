@@ -1,4 +1,4 @@
-# node-24time
+# Egg-24time
 微信小程序社区功能全栈解决方案，配合以下项目使用:
 
 > [egg-24time](https://github.com/seasonstar/egg-24time)
