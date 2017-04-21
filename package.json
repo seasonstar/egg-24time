@@ -1,5 +1,5 @@
 {
-  "name": "node-24time",
+  "name": "egg-24time",
   "version": "1.0.0",
   "description": "24time server",
   "private": true,
