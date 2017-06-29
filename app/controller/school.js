@@ -36,9 +36,9 @@ module.exports = app => {
           item.pinyin = pinyin.getCamelChars(item.name);
           return item;
         });
-        sortedList = JSON.stringify(grouped(schools, 'pinyin'));
+        sortedList = grouped(schools, 'pinyin');
         // 缓存24小时
-        app.redis.set('api_schools', sortedList, 'PX', 1000 * 60 * 60 * 24);
+        app.redis.set('api_schools', JSON.stringify(sortedList), 'PX', 1000 * 60 * 60 * 24);
       }
       ctx.body = {
         code: 0,
