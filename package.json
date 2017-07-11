@@ -8,7 +8,7 @@
     "crypto": "0.0.3",
     "egg": "^1.1.0",
     "egg-redis": "^1.0.1",
-    "egg-sequelize": "^2.0.1",
+    "egg-sequelize": "2.0.1",
     "egg-session-redis": "^1.0.0",
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.0.0",
