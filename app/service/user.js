@@ -31,8 +31,9 @@ module.exports = app => {
           id: oauth_user.userId,
         },
       });
-      user.oauth = oauth_user;
-      return user;
+      return Object.assign({
+        oauth: oauth_user,
+      }, user);
     }
 
     * createUser(site, userInfo) {
